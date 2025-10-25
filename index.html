@@ -1,78 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>World Clock App</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Halloween</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <h1>🌏 World Clock</h1>
-</header>
-
-<section class="home">
-    <h2>Current Time</h2>
-    <div class="clock-cards">
-        <div class="card" id="india-time">
-            <h3>India (IST)</h3>
-            <p class="time"></p>
-        </div>
-        <div class="card" id="ny-time">
-            <h3>New York (EST)</h3>
-            <p class="time"></p>
-        </div>
-        <div class="card" id="london-time">
-            <h3>London (GMT)</h3>
-            <p class="time"></p>
-        </div>
-        <div class="card" id="tokyo-time">
-            <h3>Tokyo (JST)</h3>
-            <p class="time"></p>
-        </div>
-        <div class="card" id="sydney-time">
-            <h3>Sydney (AEDT)</h3>
-            <p class="time"></p>
-        </div>
-        <div class="card" id="dubai-time">
-            <h3>Dubai (GST)</h3>
-            <p class="time"></p>
-        </div>
-    </div>
-</section>
-
-<section class="country-time">
-    <h2>Check Time by Country</h2>
-    <select id="country-select"></select>
-    <div class="selected-country-time">
-        <p id="selected-time"></p>
-    </div>
-</section>
-
-<section class="tools">
-    <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'notes')">Notes</button>
-        <button class="tablinks" onclick="openTab(event, 'stopwatch')">Stopwatch</button>
+  <div class="scene">
+    <div class="moon"></div>
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+    
+    <h1>404</h1>
+    <p>Oops! The page is haunted and disappeared...</p>
+    
+    <div class="pumpkins">
+      <div class="pumpkin" style="left: 10%; animation-delay: 0s;"></div>
+      <div class="pumpkin" style="left: 30%; animation-delay: 2s;"></div>
+      <div class="pumpkin" style="left: 60%; animation-delay: 1s;"></div>
+      <div class="pumpkin" style="left: 80%; animation-delay: 3s;"></div>
     </div>
 
-    <div id="notes" class="tabcontent">
-        <textarea id="notes-area" placeholder="Write your notes here..."></textarea>
-    </div>
+    <button onclick="goHome()">Return to Safety</button>
+  </div>
 
-    <div id="stopwatch" class="tabcontent">
-        <p id="display">00:00:00</p>
-        <button onclick="startStopwatch()">Start</button>
-        <button onclick="stopStopwatch()">Stop</button>
-        <button onclick="resetStopwatch()">Reset</button>
-    </div>
-</section>
-
-<footer>
-    <p>Made by Sanvi</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
